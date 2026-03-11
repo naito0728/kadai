@@ -2,8 +2,7 @@ from fastapi import FastAPI
 from .database import Base, engine
 from .routers import search, logs
 from fastapi import FastAPI
-from .routers import search, logs, categories, documents, users
-from app.routers import auth
+from .routers import search, logs, categories, documents, users, auth
 
 Base.metadata.create_all(bind=engine)
 
